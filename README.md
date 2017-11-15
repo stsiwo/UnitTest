@@ -27,7 +27,7 @@ To write unit testing, I usually draw diagram to identify components such as SUT
 Here is unit testing for this method: 
 
 ```
-/** @test */
+    /** @test */
     public function it_return_dictionary_view_model_object()
     {
       // 1. arrange
