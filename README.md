@@ -4,6 +4,8 @@ Through my work experience as a PHP developer, I oftenly encountered projects wh
 
 In order to acquire unit testing skill, I red this textbook, "Practical Unit Testing with JUnit and Mockito". then, I applied unit testing  to my own project.
 
+## Example
+
 As a simple example, I created a method in service class as following: 
 
 ```
