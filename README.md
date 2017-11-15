@@ -22,5 +22,5 @@ public function findDictionaryWithItsWords(int $id)
 
 to write unit testing, I usually draw diagram to identify components such as SUT, DOCs, and Dummy like below: 
 
-![alt text](https://raw.githubusercontent.com/stsiwo/UnitTest/edit/master/UnitTest_Diagram.png)
+![alt text](./UnitTest_Diagram.png?raw=true)
 
