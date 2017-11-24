@@ -12,14 +12,14 @@ As a simple example, I created a method in service class as following:
 
 ```
 public function findDictionaryWithItsWords(int $id)
-  {
+{
     // find dictionary with eager loading by its id
     $dic = $this->dicRepo->findDictionaryWithItsWords($id);
     // create View Model for show page
     $viewModel = Dic::createWith($dic);
 
     return $viewModel;
-  }
+}
 ```
 
 To write unit testing, I usually draw diagram to identify components such as SUT, DOCs, and Dummy like below: 
