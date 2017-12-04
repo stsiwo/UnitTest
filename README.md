@@ -33,23 +33,28 @@ Here is unit testing for this method:
     public function it_return_dictionary_view_model_object()
     {
       // 1. arrange
+      
       //  prepare dummy
       $dic_dummy_id = 1;
       $dic_dummy_model = new \App\Model\Dictionary;
+      
       // stub 1 :  DictionaryRepoInterface
       $this->dicRepo_mock
            ->shouldReceive('findDictionaryWithItsWords')
            ->with($dic_dummy_id)
            ->once()
            ->andReturn($dic_dummy_model);
+      
       // stub 2 : Dic class
       $this->Dic_mock
            ->shouldReceive('createWith')
            ->with($dic_dummy_model)
            ->once()
            ->andReturn('view_model');
+      
       // 2. act
       $result = $this->sut->findDictionaryWithItsWords($dic_dummy_id);
+      
       // 3. assert
       $this->assertEquals('view_model', $result);
     }
